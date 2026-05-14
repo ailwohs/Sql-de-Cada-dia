@@ -1,0 +1,19 @@
+
+-- comando describe serve para ver informações da tabela
+--
+DESCRIBE ALUNO;
+DESCRIBE PROFESSOR;
+DESCRIBE DISCIPLINA;        
+DESCRIBE TURMA;
+DESCRIBE FREQUENTA;
+
+
+--SELECT server para selecionar os dados da tabela
+SELECT * FROM ALUNO;        
+SELECT NOME FROM ALUNO;
+SELECT NOME, CPF FROM ALUNO;
+SELECT * FROM ALUNO WHERE SEXO = 'M';
+SELECT * FROM ALUNO WHERE SEXO = 'F';
+SELECT * FROM ALUNO WHERE CIDADE = 'São Paulo';         
+SELECT * FROM ALUNO WHERE CIDADE = 'São Paulo' AND SEXO = 'F';
+SELECT * FROM ALUNO WHERE CIDADE = 'São Paulo' OR SEXO = 'F
