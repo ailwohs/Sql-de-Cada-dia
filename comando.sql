@@ -217,3 +217,23 @@ WHERE datanascimento = TO_DATE('12/09/2006', 'DD/MM/YYYY')
 INSERT INTO frequenta VALUES ('UC120052210', 'T01', 7.0,0,1,2012);
 INSERT INTO frequenta VALUES ('UC120052210', 'T02', 8.0);
 
+-- Join serve para juntar os dados de duas ou mais tabelas
+SELECT * FROM ALUNO
+INSERT INTO FREQUENTA VALUES ('UC120052210', 'T01', NULL, NULL, NULL, NULL);
+
+-- Existem váriações do JOIN 
+SELECT A.matricula, A.nome, F.codturma
+FROM ALUNO A, FREQUENTA F
+WHERE A.matricula = F.matricula
+
+-- AMBAS SÃO AS MESMA COISA
+
+SELECT A.matricula, A.nome, F.codturma
+FROM ALUNO A
+JOIN FREQUENTA F
+ON A.matricula = F.matricula
+
+-- NATURAL JOIN SERVE PARA JUNTAR AS TABELAS PELO NOME DAS COLUNAS QUE SÃO IGUAIS
+SELECT matricula, nome, codturma
+FROM ALUNO
+NATURAL JOIN FREQUENTA
