@@ -243,3 +243,6 @@ NATURAL JOIN FREQUENTA
 
 
 -- ORDER BY serve para ordenar o resultado da consulta.
+
+
+-- LEFT JOIN serve para juntar duas tabelas, mas garantindo que todos os registros da tabela da esquerda apareçam
