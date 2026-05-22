@@ -237,3 +237,9 @@ ON A.matricula = F.matricula
 SELECT matricula, nome, codturma
 FROM ALUNO
 NATURAL JOIN FREQUENTA
+
+
+-- GROUP BY serve para agrupar registros que têm o mesmo valor em uma ou mais colunas.
+
+
+-- ORDER BY serve para ordenar o resultado da consulta.
