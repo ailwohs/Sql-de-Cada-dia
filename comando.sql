@@ -246,3 +246,14 @@ NATURAL JOIN FREQUENTA
 -- índicies no banco de dados são estruturas que melhoram a velocidade das consultas, mas podem diminuir a velocidade de inserções e atualizações. Eles funcionam como um índice em um livro, permitindo acesso rápido aos dados.
 -- eles são como sumários que ajudam a encontrar informações rapidamente, mas podem tornar o processo de adicionar ou atualizar informações mais lento, porque o índice precisa ser atualizado também.
 -- são pré definidos pelo administrador do banco de dados, que decide quais colunas devem ter índices com base nas consultas mais frequentes e na estrutura dos dados.
+
+SELECT * FROM ALUNO
+WHERE nome = 'Roger Sampaio'
+
+INDICE NOME_IDX GROUP BY nome
+    SUM'NOME_IDX' ON ALUNO (nome)
+
+
+-- OS ÍNDICIES SÃO PRÉ DEFINIDOS
+-- MAS PODE EXISTEM ALGUMS MECANISMOS QUE ESTUDEM O SISTEMA 
+-- E CRIEM SOZINHOS ESSES ÍNDICIES
