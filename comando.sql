@@ -240,9 +240,9 @@ NATURAL JOIN FREQUENTA
 
 
 -- GROUP BY serve para agrupar registros que têm o mesmo valor em uma ou mais colunas.
-
-
 -- ORDER BY serve para ordenar o resultado da consulta.
-
-
 -- LEFT JOIN serve para juntar duas tabelas, mas garantindo que todos os registros da tabela da esquerda apareçam
+
+-- índicies no banco de dados são estruturas que melhoram a velocidade das consultas, mas podem diminuir a velocidade de inserções e atualizações. Eles funcionam como um índice em um livro, permitindo acesso rápido aos dados.
+-- eles são como sumários que ajudam a encontrar informações rapidamente, mas podem tornar o processo de adicionar ou atualizar informações mais lento, porque o índice precisa ser atualizado também.
+-- são pré definidos pelo administrador do banco de dados, que decide quais colunas devem ter índices com base nas consultas mais frequentes e na estrutura dos dados.
