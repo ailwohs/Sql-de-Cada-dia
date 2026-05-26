@@ -649,3 +649,13 @@ REFERENCES State(StateId);
 
 
 commit;
+
+-- não está puxando os dados corretamente, na parte dois do desafio
+-- tem um erro de chave estrangeira 
+-- a tabela state não consegue conversar com a tabela customer
+--- não tem um relacionamento entre elas, não tem uma chave estrangeira, não tem um campo que conecte as duas tabelas
+
+ALTER TABLE Customer
+ADD COLUMN StateId INTEGER;
+FOREIGN KEY (StateId) REFERENCES State(StateId);
+
