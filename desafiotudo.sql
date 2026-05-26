@@ -659,3 +659,7 @@ ALTER TABLE Customer
 ADD COLUMN StateId INTEGER;
 FOREIGN KEY (StateId) REFERENCES State(StateId);
 
+-- Entregar a atividade amanhã meio dia
+
+
+
