@@ -646,6 +646,13 @@ ON c.CustomerId = i.CustomerId
 GROUP BY c.State
 ORDER BY TotalVendas DESC;
 
+--
+
+ALTER TABLE State
+ADD CONSTRAINT fk_state_customer
+FOREIGN KEY (StateId)
+REFERENCES Customer(StateId);
+
 
 ALTER TABLE Customer
 ADD CONSTRAINT fk_customer_state
